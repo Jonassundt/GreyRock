@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { ROLES } from '../../config/roles'
 
+import useAuth from '../../hooks/useAuth' //#
 
 //not being too strict here.
 const USER_REGEX = /^[A-z]{3,20}$/
@@ -12,6 +13,8 @@ const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
 
 
 const EditUserForm = ({ user }) => {
+
+    const { username, isManager, isAdmin } = useAuth()
 
     const navigate = useNavigate()
 
@@ -68,6 +71,12 @@ const EditUserForm = ({ user }) => {
     const onActiveChanged = () => setActive(prev => !prev)
 
     const onSaveUserClicked = async (e) => {
+        //must still be accounted for in backend.
+        if (user.roles.includes('admin') && !roles.includes('admin')) {
+            alert('Cannot remove admin role from admin user');
+            return;
+        }
+
         if (password) {
             await updateUser({ id: user.id, username, password, roles, active })
         } else {
@@ -91,7 +100,9 @@ const EditUserForm = ({ user }) => {
 
     let canSave
     if (password) {
+        // canSave = [roles.length, validUsername, validPassword].every(Boolean) && !isLoading
         canSave = [roles.length, validUsername, validPassword].every(Boolean) && !isLoading
+
     } else {
         canSave = [roles.length, validUsername].every(Boolean) && !isLoading
     }
