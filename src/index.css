@@ -10,7 +10,7 @@
 
 :root {
   /* COLORS */
-  --BGCOLOR: #0f172aee;
+  /* --BGCOLOR: #0f172aee; */
   --BORDER-COLOR: #FFF;
   --COLOR: #FFF;
   --ERROR: firebrick;
@@ -78,9 +78,9 @@ body {
   /* Rotis Semi Serif Bold */
   font-family: 'PT Serif', serif;
   min-height: 100vh;
-  background-color: var(--BGCOLOR);
+  /* background-color: var(--BGCOLOR); */
   color: var(--COLOR);
-  background-image: url('./img/bilde2.jpeg');
+  background-image: url('./img/bilde2.jpg');
   background-size: cover;
   background-position: top right;
   background-blend-mode: multiply;
@@ -151,7 +151,7 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: var(--BGCOLOR);
+  /* background-color: var(--BGCOLOR); */
   padding: 0 0.5em;
   border-bottom: 1px solid var(--BORDER-COLOR);
 }
@@ -180,7 +180,7 @@ a:focus-visible {
   position: sticky;
   bottom: 0;
   z-index: 1;
-  background-color: var(--BGCOLOR);
+  /* background-color: var(--BGCOLOR); */
   padding: 0.5em;
   border-top: 1px solid var(--BORDER-COLOR);
   display: flex;
