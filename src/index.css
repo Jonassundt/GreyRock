@@ -420,7 +420,7 @@ tr {
   border-radius: 8px;
   padding: 8px;
   text-decoration: none;  /* This will remove the underline from the link */
-  color: black;  
+  /* color: black;   */
   /* This will set the text color */
 }
 
