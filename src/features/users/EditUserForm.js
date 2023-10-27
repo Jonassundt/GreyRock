@@ -13,9 +13,7 @@ const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
 
 
 const EditUserForm = ({ user }) => {
-
-    const { username, isManager, isAdmin } = useAuth()
-
+    
     const navigate = useNavigate()
 
     const [updateUser, {
