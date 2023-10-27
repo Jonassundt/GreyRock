@@ -19,7 +19,7 @@ const Public = () => {
                 <br />
                 <p>Owner: Farry Link</p>
             </main>
-            <footer>
+            <footer className='margin_bottom_footer'>
                 <Link to="/login" className='bordered-link'>Employee Login</Link>
             </footer>
         </section>

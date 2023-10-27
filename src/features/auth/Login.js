@@ -110,7 +110,7 @@ const Login = () => {
                     </form>
                 </div>
             </main>
-            <footer>
+            <footer className='margin_bottom_footer'>
                 <Link to="/" className='bordered-link' >Back to Home</Link>
             </footer>
         </section>
