@@ -13,7 +13,7 @@ const PWD_REGEX = /^[A-z0-9!@#$%]{4,12}$/
 
 
 const EditUserForm = ({ user }) => {
-    
+
     const navigate = useNavigate()
 
     const [updateUser, {
@@ -70,7 +70,7 @@ const EditUserForm = ({ user }) => {
 
     const onSaveUserClicked = async (e) => {
         //must still be accounted for in backend.
-        if (user.roles.includes('admin') && !roles.includes('admin')) {
+        if (user.roles.includes('Admin') && !roles.includes('Admin')) {
             alert('Cannot remove admin role from admin user');
             return;
         }
