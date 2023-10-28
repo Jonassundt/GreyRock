@@ -21,7 +21,7 @@ The **GreyRock Note-sharing System** is a React-based application designed to fa
 - **Routing**: react-router
 - **Other**: CORS, Mongoose, cookie-parser
 
-## Login Details (case sensitive)
+## Login Details (example users, case sensitive)
 - **Admin**: 'Arne', '123456'
 - **Manager**: 'Mike', '123456'
 - **Employee**: 'Einar', '123456'
