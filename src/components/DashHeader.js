@@ -136,8 +136,8 @@ const DashHeader = () => {
                         <Link to="/dash">
                             <h1 className="dash-header__title">GreyRock</h1>
                         </Link>
-                        <TutorialPopup />
                     </div>
+                    <TutorialPopup />
                     <nav className="dash-header__nav">
                         {buttonContent}
                     </nav>
