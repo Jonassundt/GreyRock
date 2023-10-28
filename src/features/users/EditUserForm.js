@@ -114,7 +114,7 @@ const EditUserForm = ({ user }) => {
 
     const content = (
         <div className='centered_container'>
-            <p className={errClass}>{errContent}</p>
+            
 
             <form className="form max-width-400" onSubmit={e => e.preventDefault()}>
                 <div className="form__title-row">
@@ -185,7 +185,7 @@ const EditUserForm = ({ user }) => {
                 >
                     {options}
                 </select>
-
+                <p className={errClass}>{errContent}</p>
             </form>
         </div>
     )
