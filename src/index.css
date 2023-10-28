@@ -430,3 +430,9 @@ tr {
 .margin_bottom_footer{
   margin-bottom: 10vh;
 }
+
+.public-header{
+    display: flex;           /* Use flexbox */
+    justify-content: space-between;  /* Space items out to the edges */
+    align-items: center;     /* Vertically center the items */
+}

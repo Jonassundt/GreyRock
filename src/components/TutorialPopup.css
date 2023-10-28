@@ -1,0 +1,54 @@
+/* Modal styling */
+.modal {
+    width: 80vw; 
+    height: 80vh; 
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    position: absolute;
+    top: 50%; /* Position at the middle vertically */
+    left: 50%; /* Position at the middle horizontally */
+    transform: translate(-50%, -50%); /* Shift the modal back by half of its width and height to truly center it */
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 10px;
+
+    margin-left: 10px;
+  }
+  
+  /* Slider navigation dots styling */
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #00ff00;
+  }
+  
+
+  .paragraph-centered{
+      text-align: center;
+  }
+
+  .tut-header-container{
+    display: flex;
+    align-items: center; /* vertically aligns the items in the center */
+    justify-content: space-between;
+  }

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
-
+import TutorialPopup from './TutorialPopup'
 
 const Public = () => {
     const content = (
 
         <section className="public">
-            <header>
+            <header className='public-header'>
                 <h1>Welcome to <span className="nowrap">GreyRock!</span></h1>
+                <TutorialPopup />
             </header>
             <main className="public__main">
                 <p>Located in the beautiful city of Trondheim, Greyrock provides unique physical and digital products designed to match <b>exactly what you're looking for.</b></p>

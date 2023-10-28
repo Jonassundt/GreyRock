@@ -12,6 +12,8 @@ import useAuth from '../hooks/useAuth'
 
 import { useSendLogoutMutation } from '../features/auth/authApiSlice'
 
+import TutorialPopup from './TutorialPopup'
+
 const DASH_REGEX = /^\/dash(\/)?$/
 const NOTES_REGEX = /^\/dash\/notes(\/)?$/
 const USERS_REGEX = /^\/dash\/users(\/)?$/
@@ -128,12 +130,14 @@ const DashHeader = () => {
     const content = (
         <>
             <p className={errClass}>{error?.data?.message}</p>
-
             <header className="dash-header">
                 <div className={`dash-header__container ${dashClass}`}>
-                    <Link to="/dash">
-                        <h1 className="dash-header__title">GreyRock</h1>
-                    </Link>
+                    <div className='public-header'>
+                        <Link to="/dash">
+                            <h1 className="dash-header__title">GreyRock</h1>
+                        </Link>
+                        <TutorialPopup />
+                    </div>
                     <nav className="dash-header__nav">
                         {buttonContent}
                     </nav>

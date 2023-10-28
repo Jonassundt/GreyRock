@@ -5,7 +5,7 @@ import { setCredentials } from './authSlice'
 import { useLoginMutation } from './authApiSlice'
 import usePersist from '../../hooks/usePersist' //custom hook
 import PuffLoader from 'react-spinners/PuffLoader'
-
+import TutorialPopup from '../../components/TutorialPopup'
 
 const Login = () => {
     const userRef = useRef()
@@ -68,9 +68,11 @@ const Login = () => {
 
     const content = (
         <section className="public">
-            <header>
+            <header className='public-header'>
                 <h1>Employee Login</h1>
+                <TutorialPopup />
             </header>
+
             <main className="login">
                 <p ref={errRef} className={errClass} aria-live="assertive">{errMsg}</p>
                 <div className='centered_container'>
