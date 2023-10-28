@@ -187,6 +187,7 @@ a:focus-visible {
   flex-flow: row nowrap;
   justify-content: flex-start;
   gap: 1em;
+  margin-bottom: 10vh;
 }
 
 .dash-footer__button {
