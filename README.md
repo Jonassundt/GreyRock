@@ -1,6 +1,6 @@
 # GreyRock Note-sharing system
 
-# Hosted on `https://greyrock.onrender.com`
+## Hosted on [https://greyrock.onrender.com](https://greyrock.onrender.com)
 
 The **GreyRock Note-sharing System** is a React-based application designed to facilitate communication among employees at GreyRock, a fictional asset management firm that specializes in both physical and digital assets.
 
